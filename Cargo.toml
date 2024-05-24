@@ -1,0 +1,10 @@
+[package]
+name = "test-riscv32-semihosting-exit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+riscv = { path = "/home/kvigor/riscv/riscv", features = ["critical-section-single-hart"]  }
+riscv-rt = { path = "/home/kvigor/riscv/riscv-rt" }
+riscv-semihosting = { path = "/home/kvigor/riscv/riscv-semihosting" }
+panic-halt = "0.2.0"
